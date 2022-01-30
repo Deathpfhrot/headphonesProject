@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +8,8 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-
-/* Font: Work sans
-Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) */
-
+/* Font */
+/* Font: Work sans */
 
 /*Überschriften*/
 /* #ebccc2 */
@@ -26,11 +23,12 @@ Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 
 /*Text*/
 /* #867772 */
 
-/*Sidebar?*/
+/*Sidebar*/
 /* rgb(115, 115, 115) */
 
 /*Background*/
 /* #2e2e2e */
+
 
 /*Global*/
 
@@ -45,6 +43,7 @@ a{
 
 li{
     list-style: none;
+    color: #867772;
 }
 
 h1, h2{
@@ -58,6 +57,10 @@ p{
     line-height: 2rem;
 }
 
+h3{
+    color: #ebccc2;
+    font-weight: 300;
+}
 
 /*--------------Header-----------*/
 
@@ -146,8 +149,8 @@ p{
 }
 
 .innerCircle{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: 1px solid rgb(115, 115, 115);
     background: transparent;
@@ -164,47 +167,257 @@ p{
     color: #fff;
 }
 
-/*-------------Main-------------*/
+/*-------------Mains-------------*/
+
+/*-----Main index------(About)-*/
 
 /*Section-1-*/
 
-main{
+.mainAbout{
     width: 91%;
     margin: 0 auto;
 }
-main section:nth-of-type(1) h1{
+.mainAbout section:nth-of-type(1) h1{
     width: 25%;
     margin: 10% 0 10% 35%; 
 }
-main section:nth-of-type(1) img{
+.mainAbout section:nth-of-type(1) img{
     width: 100%;
     height: 100%;
 }
 
 /*Section-2-*/
 
-main section:nth-of-type(2){
+.mainAbout section:nth-of-type(2){
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
     margin: 10% auto;
 }
-main section:nth-of-type(2) article{
+.mainAbout section:nth-of-type(2) article{
     width: 30%;
 }
 
-main section:nth-of-type(2) article p:nth-of-type(1){
+.mainAbout section:nth-of-type(2) article p:nth-of-type(1){
     margin-top: 5%;
 }
-main section:nth-of-type(2) article p:nth-of-type(2){
+.mainAbout section:nth-of-type(2) article p:nth-of-type(2){
     margin-top: 3%;
 }
 
 
-main section:nth-of-type(2) img{
+.mainAbout section:nth-of-type(2) img{
     width: 30%;
     height: 30%;
 }
 
+/*-------Main Lounger/Experience/Shop/Contact Formular-------*/
 
+/*--Lounger/Experience----Main--*/
+
+.mainCombosX3 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainCombosX3 .img-wrapper{
+    width: 55%;
+    height: 100%;
+    margin: 0;
+}
+
+.mainCombosX3 .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mainCombosX3 article{
+    width: 25%;
+    margin-left: 3%;
+}
+.mainCombosX3 article h2{
+    margin-bottom: 20%;
+}
+
+.mainCombosX3 article p{
+    margin-bottom: 5%;
+}
+
+/*-------Main Shop-Seperate Right Part-------*/
+
+.mainCombosX3 .shopRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-left: 10%;
+}
+
+.mainCombosX3 .shopRight h2{
+    margin-bottom: 5%;
+}
+
+.mainCombosX3 .shopRight p{
+    margin-bottom: 1%;
+}
+
+.mainCombosX3 .shopRight a{
+    padding: 2% 5%;
+    background-color: rgb(234, 204, 194);
+    border-radius: 5px;
+}
+.mainCombosX3 .shopRight aside{
+    width: 120%;
+    height: 100%;
+    margin: 0;
+}
+.mainCombosX3 .shopRight img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+/*-------Subcrition Main-------*/
+
+.mainCombosX3 .img-wrapper .women{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*fürs img html tag*/
+    object-position: left;    /*fürs img html tag*/
+}
+
+/*----Contact Formular-------*/
+
+.contactUs {
+    background: url(../img/contact-bg.png);
+    height: 90vh;
+}
+
+.contactUs form {
+    display: inline-block;
+    background-color: rgb(209, 208, 208, 0.5);
+    width: 100%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 30%;
+    border-radius: 1rem;
+    font-family: "PoetsenOne";
+}
+
+.contactUs label {
+    color: white;
+}
+
+.contactUs form div {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.contactUs form h2 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contactUs textarea {
+    border-radius: 10px;
+    margin-left: 13%;
+    height: 200px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.contactUs form div:nth-of-type(1) label {
+    margin-right: 1.2%;
+}
+
+.inputnameEmail {
+    background: rgb(168, 166, 166);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.contactUs div:nth-child(7) input {
+    margin: 0 5%;
+    border-radius: 5px;
+    border: transparent;
+    background: transparent;
+    color: white;
+    font-family: "PoetsenOne";
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+form div:nth-of-type(5){
+    margin-left: 20%;
+}
+
+form div:nth-of-type(6){
+    margin-left: 30%;
+}
+
+/*-------Main Inspiration-------*/
+
+.mainInspiration{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.mainInspiration section{
+    margin: 10rem auto;
+}
+
+.mainInspiration section article{
+    margin: 15% 0 2% 3%;
+}
+
+.mainInspiration section article ul{
+    display: flex;
+}
+
+.mainInspiration section article ul li{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10% 1% 2% 0;
+}
+
+.mainInspiration section:nth-of-type(2){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    margin: 0 8% 0 3% ;
+}
+
+.mainInspiration .goldNugget{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+.mainInspiration .goldText{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.mainInspiration .archi{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.mainInspiration .circlesGold{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+}
+
+.mainInspiration section:nth-of-type(2) article h2{
+    margin: 5% 0;
+}

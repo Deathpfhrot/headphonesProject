@@ -154,8 +154,8 @@ p{
 }
 
 .innerCircle{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border: 1px solid rgb(115, 115, 115);
     background: transparent;
