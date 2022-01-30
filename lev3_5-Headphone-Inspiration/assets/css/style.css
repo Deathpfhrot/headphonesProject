@@ -294,9 +294,8 @@ h3{
 /*----Contact Formular-------*/
 
 .contactUs {
-    background: url(../img/contact-bg.png);
     height: 90vh;
-}
+}   
 
 .contactUs form {
     display: inline-block;
@@ -321,14 +320,14 @@ h3{
 
 .contactUs form h2 {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .contactUs textarea {
     border-radius: 10px;
     margin-left: 13%;
-    height: 200px;
-    width: 300px;
+    width: 70%;
+    height: 100%;
     font-size: 20px;
 }
 
@@ -350,7 +349,6 @@ h3{
     border: transparent;
     background: transparent;
     color: white;
-    font-family: "PoetsenOne";
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -359,7 +357,8 @@ form div:nth-of-type(5){
 }
 
 form div:nth-of-type(6){
-    margin-left: 30%;
+    margin-top: 15%;
+    margin-left: 25%;
 }
 
 /*-------Main Inspiration-------*/
@@ -420,4 +419,8 @@ form div:nth-of-type(6){
 
 .mainInspiration section:nth-of-type(2) article h2{
     margin: 5% 0;
+}
+
+@media screen and (max-width: 375px) {
+    
 }
