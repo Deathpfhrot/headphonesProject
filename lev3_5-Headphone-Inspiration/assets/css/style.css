@@ -195,6 +195,7 @@ h3{
     gap: 5%;
     margin: 10% auto;
 }
+
 .mainAbout section:nth-of-type(2) article{
     width: 30%;
 }
@@ -305,8 +306,7 @@ h3{
     margin-left: 30%;
     margin-top: 30%;
     border-radius: 1rem;
-    font-family: "PoetsenOne";
-}
+    }
 
 .contactUs label {
     color: white;
@@ -421,6 +421,178 @@ form div:nth-of-type(6){
     margin: 5% 0;
 }
 
+.dropdown{
+    display: none;
+    font-size: 1.75rem;
+    position: relative;
+}
+
+/*Mobil-Phone Responsive Design*/
+
 @media screen and (max-width: 375px) {
+
+    /*Nav Header*/
+
+    header{
+        display: none;
+    }
+
+    /*Hamburger Menu*/
     
+    .dropdown{
+        display: flex;
+        font-size: 1.75rem;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+    }
+
+    .dropdown-button{
+        background: unset;
+        border: unset;
+        font-size: 1.5rem;
+    }
+
+    .dropdown-menu{
+        background: #2e2e2e;
+        font-size: 1rem;
+        list-style: none;
+        padding: 0.75rem;
+        box-shadow: 0 2px 5px 0 black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-120%);
+        transition: all 0.3s;
+        color: #fff;
+    }
+
+    .dropdown > .dropdown-link:focus + .dropdown-menu{
+        transform: translateY(0);
+    }
+
+    .dropdown-content{
+        width: 13rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .content-center{
+        margin: 2rem 0;
+    }
+
+    /*Main About*/
+
+    .mainAbout section:nth-of-type(1) h1{
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    .mainAbout section:nth-of-type(2){
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .mainAbout section:nth-of-type(2) article{
+        width: 91%;
+    }
+
+    .mainAbout section:nth-of-type(2) article:nth-of-type(1){
+        margin: 10% 0;
+    }
+
+    .mainAbout section:nth-of-type(2) img{
+        width: 90%;
+    }
+
+    /*Main Lounger*/
+
+    .mainCombosX3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainCombosX3 .img-wrapper{
+        width: 100%;
+    }
+
+    .mainCombosX3 article{
+        width: 91%;
+    }
+
+    .mainCombosX3 article:nth-of-type(2) h2{
+        padding-top: 10%;
+    }
+
+    /*Shop Main-*/
+
+    .mainCombosX3 .shopRight{
+        width: 91%;
+        margin: 5% 0;
+    }
+    .mainCombosX3 .shopRight aside{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Inspiration Main-*/
+
+    .mainInspiration{
+        width: 91%;
+    }
+
+    .mainInspiration section:nth-of-type(1) video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainInspiration section:nth-of-type(1){
+        margin: 5rem auto;
+    }
+
+    .mainInspiration section:nth-of-type(2){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+    .mainInspiration .goldNugget{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+    
+    .mainInspiration .goldText{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .mainInspiration .archi{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .mainInspiration .circlesGold{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+    }
+
+
+    /*Subscription Main-*/
+
+    .contactUs form{
+        margin-left: 0;
+        height: 100%;
+        margin-top: 10%;
+    }
+    .contactUs textarea{
+        margin-left: 18%;
+    }
+
+
+
+
 }
